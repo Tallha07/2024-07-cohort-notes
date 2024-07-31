@@ -9,14 +9,33 @@ array with the the name removed. If the passed in name is not found, return -1
 
 /*
 Your Polyas here:
-
+create a function called userData. It will take in 2 arguments
+  -argument 1 is an array of user names.
+  -argument 2 is a string name
+iterate through the array of names
+  -2a for each iteration check to see if the currently checked name is the same as the argument string name
+    -if it is, remove it (hint: we can use splice...we may need index)
+      -if it is not, do nothing.
+    
 
 
 */
 
 
 // Your code here
-
+function userData (nameArr, name){
+  if(!nameArr.Includes(name){
+    return -1
+  }
+     let copy = nameArr.slice();
+  for (let i =0; i < nameArr.length; i++){
+    let currName = copy[1];
+    if (currName ===name){
+      copy.splice(i, 1);
+    }
+  }
+  return copy
+}
 
 /* DO NOT MODIFY ANYTHING BELOW THIS LINE */
 
